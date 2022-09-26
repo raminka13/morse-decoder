@@ -47,11 +47,11 @@ class MorseEncoder
   end
 
   def encode_word(word)
-    word.split('').map { |char| encode_char(char) }.join(' ')
+    word.chars.map { |char| encode_char(char) }.join(' ')
   end
 
   def encode(sentence)
-    sentence.upcase.split(' ').map { |word| encode_word(word) }.join('   ')
+    sentence.upcase.split.map { |word| encode_word(word) }.join('   ')
   end
 end
 
