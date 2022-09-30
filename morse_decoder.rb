@@ -1,5 +1,5 @@
 class MorseDecoder
-  @@morse_code_dictionary = {
+  @@morse_decode_dictionary = {
     '.-' => 'A',
     '-...' => 'B',
     '-.-.' => 'C',
@@ -43,7 +43,7 @@ class MorseDecoder
   }
 
   def decode_char(char)
-    @@morse_code_dictionary[char]
+    @@morse_decode_dictionary[char]
   end
 
   def decode_word(word)

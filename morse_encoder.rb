@@ -1,5 +1,5 @@
 class MorseEncoder
-  @@morse_code_dictionary = {
+  @@morse_encode_dictionary = {
     'A' => '.-',
     'B' => '-...',
     'C' => '-.-.',
